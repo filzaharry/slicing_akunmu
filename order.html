@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mobile first design</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/uikit.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <link rel="stylesheet" href="./css/order.css" />
+    <link rel="stylesheet" href="./css/order_responsive.css" />
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+  </head>
+
+  <body>
+    <!-- <img
+      style="bottom: 0; right: 0; position: fixed; height: 150px"
+      src="./img/call_center.png"
+      alt="call_center"
+    /> -->
+    <div class="nav-lg">
+      <nav class="container">
+        <div class="logo-section">
+          <div class="logo" style="display: flex">
+            <img src="./img/logo-akunmu.svg" alt="logo" />
+            <p
+              style="
+                font-size: 18px;
+                font-weight: bold;
+                margin: 10px;
+                color: #3a3a3a;
+              "
+            >
+              Akunmu
+            </p>
+          </div>
+          <!-- <img class="logo" src="./img/logo.png" alt="logo"> -->
+          <!-- <div class="search-block">
+                    <input type="text" placeholder="Search for rooms or homes...">
+                    <img src="./img/search-icon.png" alt="search-icon">
+                </div> -->
+        </div>
+        <img class="hamburger" src="./img/hamburger.png" alt="hamburger" />
+        <ul class="nav-list">
+          <li class="li-active" style="color: red">
+            <a href="#" class="active">Layanan</a>
+          </li>
+          <li>
+            <a href="#">Cara Pemesanan</a>
+          </li>
+          <li>
+            <a href="#">Testimoni</a>
+          </li>
+          <li>
+            <a href="#">FAQ</a>
+          </li>
+          <li>
+            <a href="#">Laporan Kendala</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <main>
+      <div class="order-hero-container">
+        <div class="order-hero">
+          <div class="order-hero__text-block">
+            <h2>Pesanan</h2>
+            <p>Silahkan isi terlebih dahulu sebelum melakukan pemesanan.</p>
+
+            <div class="order-hero-title">
+              <h4>Produk yang dipesan</h4>
+              <h5>
+                Ubah Paket
+              </h5>
+            </div>
+            <div class="order-hero-card" >
+              <div class="order-hero-card-row"
+              >
+                <div class="order-hero-card-img">
+                  <img
+                    src="./img/disney-hotstar.png"
+                    alt="disney-hotstar"
+                  />
+                </div>
+
+                <div class="order-hero-card-title">
+                  <p class="title">
+                    Disney Hotstart Plus - Paket Premium 1 Tahun
+                  </p>
+                  <p class="subtitle">
+                    Rp150.000 / 1 Tahun
+                  </p>
+                </div>
+              </div>
+              <hr />
+              <div
+              class="order-hero-card-price"
+              >
+                <div class="price">
+                  <p>Total Pembayaran</p>
+                </div>
+                <div class="nominal">
+                  <p>Rp150.000</p>
+                </div>
+              </div>
+            </div>
+            <h5>Pilih Masa Berlangganan</h5>
+            <select class="form-select order-form-select">
+              <option selected>1 Tahun ( Rp150.000 )</option>
+            </select>
+
+            <h4 class="order-hero-subtitle">
+              Informasi Pengguna
+            </h4>
+            <div>
+              <h5>Nama Lengkap</h5>
+              <input
+                type="email"
+                class="form-control order-form-select "
+                id="exampleFormControlInput1"
+                placeholder="name@example.com"
+              />
+            </div>
+            <div class="mt-4">
+              <h5>Email</h5>
+              <input
+                type="email"
+                class="form-control order-form-select "
+                id="exampleFormControlInput1"
+                placeholder="name@example.com"
+              />
+            </div>
+            <div class="mt-4">
+              <p>Nomor whatsapp (Pastikan nomor sudah benar dan aktif)</p>
+              <div class="order-form-wa-number">
+                <div class="phone">
+                  <select class="form-select  order-form-select " aria-label="Default select example">
+                    <option selected>+62</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+                <div class="phone-input">
+                  <input
+                    type="email"
+                    class="form-control  order-form-select "
+                    id="exampleFormControlInput1"
+                    placeholder="name@example.com"
+                  />
+              </div>
+              </div>
+            </div>
+            <div class="mt-4">
+              <div class="form-check">
+                <input class="form-check-input check-approval" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label order-label" for="flexCheckDefault">
+                  Menyetujui aturan yang dibuat oleh Akunmu
+                </label>
+              </div>
+            </div>
+            <div class="mt-4">
+              <a href="#" class="order__btn">Konfirmasi Pesanan</a>
+            </div>
+            <br><br><br>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <footer class="footer-section">
+          <div class="container">
+            <div class="footer-content">
+              <!-- <div class="row"> -->
+              <!-- <div class="col-xl-4 col-lg-4 mb-50"> -->
+              <div class="footer-widget">
+                <div class="footer-logo">
+                  <img src="./img/logo-akunmu.svg" alt="logo" />
+                  <p
+                    style="
+                      font-size: 18px;
+                      font-weight: bold;
+                      margin: 10px;
+                      color: white;
+                    "
+                  >
+                    Akunmu
+                  </p>
+                </div>
+
+                <div class="footer-lg">
+                  <div class="footer-text">
+                    <p>
+                      Platform pertama di Indonesia yang memberikan layanan
+                      Berlangganan Bersama agar dapat menikmati fitur premium
+                      dengan proses berlanggaran yang praktis, legas, aman dan
+                      murah
+                    </p>
+                    <br />
+                    <p>akunmu.id@gmail.com</p>
+                    <br />
+                  </div>
+                  <!-- <div class=""></div> -->
+                  <div class="footer-md">
+                    <div class="footer-text">
+                      <h4>Akunmu</h4>
+                      <ul class="footer-ul">
+                        <li><a href="#">Tentang Kami</a></li>
+                        <li><a href="#">Cara Pesan</a></li>
+                        <li><a href="#">Syarat & Ketentuan</a></li>
+                        <li><a href="#">Kebijakan Privasi</a></li>
+                        <li><a href="#">Laporan Kendala</a></li>
+                      </ul>
+                    </div>
+                    <div class="footer-text">
+                      <h4>Produk</h4>
+                      <ul class="footer-ul">
+                        <li><a href="#">Produk Digital</a></li>
+                        <li><a href="#">Produk Non Digital</a></li>
+                        <li><a href="#">Program Patungan</a></li>
+                        <li><a href="#">Program Sekeranjang</a></li>
+                      </ul>
+                    </div>
+                    <div class="footer-text">
+                      <h4>Hubungi Kami</h4>
+                      <ul class="footer-ul">
+                        <li>cs@akunmu</li>
+                        <li>+62 895123123</li>
+                        <li>Jam Operasional</li>
+                        <li>Setiap Hari 09.00 - 21.00 WIB</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- </div> -->
+              <!-- </div> -->
+            </div>
+          </div>
+        </footer>
+      </div>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

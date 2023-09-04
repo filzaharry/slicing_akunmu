@@ -1,0 +1,1324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mobile first design</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    /> -->
+    <link rel="stylesheet" href="css/uikit.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+  </head>
+
+  <body>
+    <img class="call-center"
+      src="./img/call_center.png"
+      alt="call_center"
+    />
+    <div class="nav-lg">
+      <nav class="container">
+        <div class="logo-section">
+          <div class="logo" style="display: flex">
+            <img src="./img/logo-akunmu.svg" alt="logo" />
+            <p
+              style="
+                font-size: 20px;
+                font-weight: bold;
+                margin: 0 0 10px 10px;
+                color: #3a3a3a;
+              "
+            >
+              Akunmu
+            </p>
+          </div>
+          <!-- <img class="logo" src="./img/logo.png" alt="logo"> -->
+          <!-- <div class="search-block">
+                    <input type="text" placeholder="Search for rooms or homes...">
+                    <img src="./img/search-icon.png" alt="search-icon">
+                </div> -->
+        </div>
+        <img class="hamburger" src="./img/hamburger.png" alt="hamburger" />
+        <ul class="nav-list">
+          <li class="li-active" style="color: red">
+            <a href="#" class="active">Layanan</a>
+          </li>
+          <li>
+            <a href="#">Cara Pemesanan</a>
+          </li>
+          <li>
+            <a href="#">Testimoni</a>
+          </li>
+          <li>
+            <a href="#">FAQ</a>
+          </li>
+          <li>
+            <a href="#">Laporan Kendala</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <main>
+      <div class="hero-container">
+        <div class="hero">
+          <div class="hero__text-block">
+            <div class="house-emoji">
+              <img class="img-hero" src="./img/hero-img.png" alt="heroImg" />
+            </div>
+            <h1 class="hero-title">Patungan Layanan Premium</h1>
+            <h3 class="hero-subtitle">
+              Cek pilihan layanan di Akunmu sekarang
+            </h3>
+            <button class="hero-btn">Lihat Detail</button>
+            <!-- <div class="search-block search-block--hero">
+                  <input type="text" placeholder="Try “Copenhagen, Denmark”" />
+                  <img src="./img/search-icon.png" alt="search-icon" />
+                </div> -->
+            <!-- <div class="hero__btn-block">
+                  <button class="btn btn-success">All properties</button>
+                  <button class="btn btn-secondary">Homes</button>
+                  <button class="btn btn-secondary">Experiences</button>
+                  <button class="btn btn-secondary">Restaurants</button>
+                </div> -->
+          </div>
+          <div class="hero__image-block">
+            <img src="./img/hero-img.png" alt="room" />
+          </div>
+        </div>
+        <br />
+        <div class="sub-hero">
+          <div class="sub-hero-title">
+            <h2 class="title">
+              Jadilah Bagian Dari Akunmu
+            </h2>
+            <h4 class="subtitle">
+              Dapatkan manfaat Patungan Berlangganan, Nikmati Layanan premium
+              dengan lebih hemat, aman dan legal.
+            </h4>
+          </div>
+          <br /><br />
+
+          <div class="sub-hero-wrapper">
+            <div class="sub-hero-card">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    d="M15.5 7.5C15.5 9.433 13.933 11 12 11C10.067 11 8.5 9.433 8.5 7.5C8.5 5.567 10.067 4 12 4C13.933 4 15.5 5.567 15.5 7.5Z"
+                    fill="#55BCF8"
+                  ></path>
+                  <path
+                    opacity="0.4"
+                    d="M19.5 7.5C19.5 8.88071 18.3807 10 17 10C15.6193 10 14.5 8.88071 14.5 7.5C14.5 6.11929 15.6193 5 17 5C18.3807 5 19.5 6.11929 19.5 7.5Z"
+                    fill="#55BCF8"
+                  ></path>
+                  <path
+                    opacity="0.4"
+                    d="M4.5 7.5C4.5 8.88071 5.61929 10 7 10C8.38071 10 9.5 8.88071 9.5 7.5C9.5 6.11929 8.38071 5 7 5C5.61929 5 4.5 6.11929 4.5 7.5Z"
+                    fill="#55BCF8"
+                  ></path>
+                  <path
+                    d="M18 16.5C18 18.433 15.3137 20 12 20C8.68629 20 6 18.433 6 16.5C6 14.567 8.68629 13 12 13C15.3137 13 18 14.567 18 16.5Z"
+                    fill="#55BCF8"
+                  ></path>
+                  <path
+                    opacity="0.4"
+                    d="M22 16.5C22 17.8807 20.2091 19 18 19C15.7909 19 14 17.8807 14 16.5C14 15.1193 15.7909 14 18 14C20.2091 14 22 15.1193 22 16.5Z"
+                    fill="#55BCF8"
+                  ></path>
+                  <path
+                    opacity="0.4"
+                    d="M2 16.5C2 17.8807 3.79086 19 6 19C8.20914 19 10 17.8807 10 16.5C10 15.1193 8.20914 14 6 14C3.79086 14 2 15.1193 2 16.5Z"
+                    fill="#55BCF8"
+                  ></path>
+                </g>
+              </svg>
+              <!-- <img src="./img/user.png" alt="user" /> -->
+              <h2 class="title">38.000+</h2>
+              <h4 class="subtitle">Pengguna</h4>
+            </div>
+
+            <div class="sub-hero-card">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    opacity="0.5"
+                    d="M3 10C3 6.22876 3 4.34315 4.17157 3.17157C5.34315 2 7.22876 2 11 2H13C16.7712 2 18.6569 2 19.8284 3.17157C21 4.34315 21 6.22876 21 10V14C21 17.7712 21 19.6569 19.8284 20.8284C18.6569 22 16.7712 22 13 22H11C7.22876 22 5.34315 22 4.17157 20.8284C3 19.6569 3 17.7712 3 14V10Z"
+                    fill="#55BCF8"
+                  ></path>
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M7.25 12C7.25 11.5858 7.58579 11.25 8 11.25H16C16.4142 11.25 16.75 11.5858 16.75 12C16.75 12.4142 16.4142 12.75 16 12.75H8C7.58579 12.75 7.25 12.4142 7.25 12Z"
+                    fill="#55BCF8"
+                  ></path>
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M7.25 8C7.25 7.58579 7.58579 7.25 8 7.25H16C16.4142 7.25 16.75 7.58579 16.75 8C16.75 8.41421 16.4142 8.75 16 8.75H8C7.58579 8.75 7.25 8.41421 7.25 8Z"
+                    fill="#55BCF8"
+                  ></path>
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M7.25 16C7.25 15.5858 7.58579 15.25 8 15.25H13C13.4142 15.25 13.75 15.5858 13.75 16C13.75 16.4142 13.4142 16.75 13 16.75H8C7.58579 16.75 7.25 16.4142 7.25 16Z"
+                    fill="#55BCF8"
+                  ></path>
+                </g>
+              </svg>
+              <h2 class="title">210.000+</h2>
+              <h4 class="subtitle">Transaksi</h4>
+            </div>
+            <div class="sub-hero-card">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M20.8293 10.7154L20.3116 12.6473C19.7074 14.9024 19.4052 16.0299 18.7203 16.7612C18.1795 17.3386 17.4796 17.7427 16.7092 17.9223C16.6129 17.9448 16.5152 17.9621 16.415 17.9744C15.4999 18.0873 14.3834 17.7881 12.3508 17.2435C10.0957 16.6392 8.96815 16.3371 8.23687 15.6522C7.65945 15.1114 7.25537 14.4115 7.07573 13.641C6.84821 12.6652 7.15033 11.5377 7.75458 9.28263L8.27222 7.35077C8.3591 7.02654 8.43979 6.7254 8.51621 6.44561C8.97128 4.77957 9.27709 3.86298 9.86351 3.23687C10.4043 2.65945 11.1042 2.25537 11.8747 2.07573C12.8504 1.84821 13.978 2.15033 16.2331 2.75458C18.4881 3.35883 19.6157 3.66095 20.347 4.34587C20.9244 4.88668 21.3285 5.58657 21.5081 6.35703C21.7356 7.3328 21.4335 8.46034 20.8293 10.7154ZM11.0524 9.80589C11.1596 9.40579 11.5709 9.16835 11.971 9.27556L16.8006 10.5697C17.2007 10.6769 17.4381 11.0881 17.3309 11.4882C17.2237 11.8883 16.8125 12.1257 16.4124 12.0185L11.5827 10.7244C11.1826 10.6172 10.9452 10.206 11.0524 9.80589ZM10.2756 12.7033C10.3828 12.3032 10.794 12.0658 11.1941 12.173L14.0919 12.9495C14.492 13.0567 14.7294 13.4679 14.6222 13.868C14.515 14.2681 14.1038 14.5056 13.7037 14.3984L10.8059 13.6219C10.4058 13.5147 10.1683 13.1034 10.2756 12.7033Z"
+                    fill="#55BCF8"
+                  ></path>
+                  <path
+                    opacity="0.5"
+                    d="M16.4149 17.9745C16.2064 18.6128 15.8398 19.1903 15.347 19.6519C14.6157 20.3368 13.4881 20.6389 11.2331 21.2432C8.97798 21.8474 7.85044 22.1496 6.87466 21.922C6.10421 21.7424 5.40432 21.3383 4.86351 20.7609C4.17859 20.0296 3.87647 18.9021 3.27222 16.647L2.75458 14.7152C2.15033 12.4601 1.84821 11.3325 2.07573 10.3568C2.25537 9.5863 2.65945 8.88641 3.23687 8.3456C3.96815 7.66068 5.09569 7.35856 7.35077 6.75431C7.7774 6.64 8.16369 6.53649 8.51621 6.44534C8.51618 6.44545 8.51624 6.44524 8.51621 6.44534C8.43979 6.72513 8.3591 7.02657 8.27222 7.35081L7.75458 9.28266C7.15033 11.5377 6.84821 12.6653 7.07573 13.6411C7.25537 14.4115 7.65945 15.1114 8.23687 15.6522C8.96815 16.3371 10.0957 16.6393 12.3508 17.2435C14.3833 17.7881 15.4999 18.0873 16.4149 17.9745Z"
+                    fill="#55BCF8"
+                  ></path>
+                </g>
+              </svg>
+              <h2 class="title">29</h2>
+              <h4 class="subtitle">Layanan</h4>
+            </div>
+            <div class="sub-hero-card">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    opacity="0.5"
+                    d="M2 9.1371C2 14 6.01943 16.5914 8.96173 18.9109C10 19.7294 11 20.5 12 20.5C13 20.5 14 19.7294 15.0383 18.9109C17.9806 16.5914 22 14 22 9.1371C22 4.27416 16.4998 0.825464 12 5.50063C7.50016 0.825464 2 4.27416 2 9.1371Z"
+                    fill="#55BCF8"
+                  ></path>
+                  <path
+                    d="M16.5 13.2871C14.0251 10.5713 11 12.5746 11 15.3995C11 17.9583 12.814 19.4344 14.3584 20.6912L14.4018 20.7265C14.5474 20.8449 14.6903 20.9615 14.829 21.0769C15.4 21.5523 15.95 22 16.5 22C17.05 22 17.6 21.5523 18.171 21.0769C19.7893 19.7296 22 18.2243 22 15.3995C22 14.4715 21.6735 13.6321 21.1474 13.0197C20.0718 11.7677 18.1619 11.4635 16.5 13.2871Z"
+                    fill="#55BCF8"
+                  ></path>
+                </g>
+              </svg>
+              <h2 class="title">9/10</h2>
+              <h4 class="subtitle">Kepuasan</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="modal-product-schema" class="uk-flex-top" uk-modal>
+        <!-- IF IN MAX RESOLUTION AND LENGTH > 1 -->
+        <!-- <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical modal-price-scheme-single"> -->
+        <div
+          class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical modal-price-scheme"
+        >
+          <button
+            class="uk-modal-close-default"
+            type="button"
+            uk-close
+          ></button>
+          <p style="font-size: 18px; font-weight: 600">
+            Skema Harga Disney Hotstar
+          </p>
+
+          <!-- IF IN MAX RESOLUTION AND LENGTH > 1 -->
+          <!-- <div class="product_scheme__list-wrapper-single"> -->
+          <div class="product_scheme__list-wrapper">
+            <div class="modal-content-border">
+              <img
+                class="content-logo"
+                src="./img/disney-hotstar.png"
+                alt="disney-logo"
+              />
+              <p class="modal-content-title">
+                Harga Paket Disney+ Hotstar Host 1 Tahun
+              </p>
+              <img
+                class="content-thumbnail"
+                src="./img/disney-hotstar-product.png"
+                alt="disney-product"
+              />
+              <p class="modal-content-subtitle">Detail Harga</p>
+              <div class="modal-content-container">
+                <div class="inner-content">
+                  <span class="left-bold">Nama Paket</span>
+                  <span class="right-bold">Paket Premium Disney (Tahunan)</span>
+                </div>
+                <div class="inner-content">
+                  <span class="left">Harga Paket</span>
+                  <span class="right">Rp199.000</span>
+                </div>
+                <div class="inner-content">
+                  <span class="left">Jumlah member dalam 1 grup</span>
+                  <span class="right">2</span>
+                </div>
+                <div class="inner-content">
+                  <span class="left">Harga Patungan</span>
+                  <span class="right">Rp199.000 ÷ 2 = Rp99.500</span>
+                </div>
+                <div class="inner-content">
+                  <span class="left">Biaya Admin Seakun</span>
+                  <span class="right">Rp0</span>
+                </div>
+                <div class="inner-content">
+                  <span class="left-bold">Harga Paket Tahunan</span>
+                  <span class="right-bold">Rp99.500</span>
+                </div>
+              </div>
+              <hr />
+              <p class="modal-p-subscribe">Skema Berlangganan</p>
+              <ol class="ol-subscribe">
+                <li>
+                  User melakukan pendaftaran ke Disney+ menggunakan nomor
+                  pribadi
+                </li>
+                <li>
+                  User subscribe Plan Yearly seharga Rp199.000 menggunakan
+                  payment pribadi
+                </li>
+                <li>
+                  Setelah berhasil melakukan purchase, informasikan ke Admin
+                  dengan mengirimkan bukti transaksi Disney+
+                </li>
+                <li>Admin akan mengirimkan penggantian dana sebesar 49.500</li>
+                <li>
+                  User dapat menikmati fitur Premium selama 1 tahun sebagai user
+                  host
+                </li>
+              </ol>
+            </div>
+            <div class="modal-content-border">
+              <img
+                class="content-logo"
+                src="./img/disney-hotstar.png"
+                alt="disney-logo"
+              />
+              <p class="modal-content-title">
+                Harga Paket Disney+ Hotstar Host 1 Tahun
+              </p>
+              <img
+                class="content-thumbnail"
+                src="./img/disney-hotstar-product.png"
+                alt="disney-product"
+              />
+              <p class="modal-content-subtitle">Detail Harga</p>
+              <div class="modal-content-container">
+                <div class="inner-content">
+                  <span class="left-bold">Nama Paket</span>
+                  <span class="right-bold">Paket Premium Disney (Tahunan)</span>
+                </div>
+                <div class="inner-content">
+                  <span class="left">Harga Paket</span>
+                  <span class="right">Rp199.000</span>
+                </div>
+                <div class="inner-content">
+                  <span class="left">Jumlah member dalam 1 grup</span>
+                  <span class="right">2</span>
+                </div>
+                <div class="inner-content">
+                  <span class="left">Harga Patungan</span>
+                  <span class="right">Rp199.000 ÷ 2 = Rp99.500</span>
+                </div>
+                <div class="inner-content">
+                  <span class="left">Biaya Admin Seakun</span>
+                  <span class="right">Rp0</span>
+                </div>
+                <div class="inner-content">
+                  <span class="left-bold">Harga Paket Tahunan</span>
+                  <span class="right-bold">Rp99.500</span>
+                </div>
+              </div>
+              <hr />
+              <p class="modal-p-subscribe">Skema Berlangganan</p>
+              <ol class="ol-subscribe">
+                <li>
+                  User melakukan pendaftaran ke Disney+ menggunakan nomor
+                  pribadi
+                </li>
+                <li>
+                  User subscribe Plan Yearly seharga Rp199.000 menggunakan
+                  payment pribadi
+                </li>
+                <li>
+                  Setelah berhasil melakukan purchase, informasikan ke Admin
+                  dengan mengirimkan bukti transaksi Disney+
+                </li>
+                <li>Admin akan mengirimkan penggantian dana sebesar 49.500</li>
+                <li>
+                  User dapat menikmati fitur Premium selama 1 tahun sebagai user
+                  host
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="modal-subscribe" class="uk-flex-top" uk-modal>
+        <!-- IF IN MAX RESOLUTION AND LENGTH > 1 -->
+        <!-- <div
+          class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical modal-subscribe-scheme-single"
+        > -->
+        <div
+          class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical modal-subscribe-scheme"
+        >
+          <button
+            class="uk-modal-close-default"
+            type="button"
+            uk-close
+          ></button>
+          <p class="m-package-title">Pilih Paket</p>
+
+          <div class="modal-content-alert">
+            <span>ⓘ</span>
+            <div class="modal-p-alert">
+              <span class="desc">
+                Dengan memilih paket Pre-order artinya kamu menunggu grup penuh.
+                Begitu slot sudah penuh, kamu akan dihubungi oleh Admin Seakun
+                untuk melakukan pembayaran.</span
+              >
+              <span class="link-desc"><a href="">Lihat lebih lengkap</a></span>
+            </div>
+          </div>
+          <!-- IF IN MAX RESOLUTION AND LENGTH > 1 -->
+          <!-- <div class="product_scheme__list-wrapper-single"> -->
+          <div class="product_scheme__list-wrapper">
+            <div>
+              <div class="m-container-package">
+                <p class="m-package-status">Preorder</p>
+                <p class="m-package-product-title">Disney Hotstar +</p>
+                <p class="m-package-product-subtitle">Paket User Host</p>
+                <!-- <div style=" margin-left:20px;margin-top: -20px;background-color: red;">
+                        </div> -->
+
+                <div class="m-subpackage-container">
+                  <ul class="ul-check">
+                    <li>
+                      <p>
+                        Akses film mancanegara paling seru dari Marvel, Disney,
+                        dan lainnya
+                      </p>
+                    </li>
+                    <li>
+                      <p>Nonton premier eksklusif film bioskop Indonesia</p>
+                    </li>
+                    <li>
+                      <p>Nikmati tayangan eksklusif dari Disney+ Originals</p>
+                    </li>
+                    <li>
+                      <p>
+                        Stream dengan kualitas HD atau resolusi lebih rendah
+                        untuk hemat data
+                      </p>
+                    </li>
+                    <li>
+                      <p>Sharing ke satu orang lainnya</p>
+                    </li>
+                    <li>
+                      <p>Gratis biaya admin Seakun</p>
+                    </li>
+                  </ul>
+                  <div class="m-detailprice-container">
+                    <div class="">
+                      <p class="m-detailprice-title">
+                        Rp99.500<span>/12 bln</span>
+                      </p>
+                    </div>
+                    <div class="" style="margin-top: 4px">
+                      <p class="m-detailprice-btn-detail">Detail Harga</p>
+                    </div>
+                  </div>
+                  <div class="modal-content-container-package">
+                    <div class="inner-content">
+                      <span class="left-bold">Nama Paket</span>
+                      <span class="right-bold"
+                        >Paket Premium Disney (Tahunan)</span
+                      >
+                    </div>
+                    <hr class="m-detailprice-hr" />
+                    <div class="inner-content">
+                      <span class="left">Harga Paket</span>
+                      <span class="right">Rp199.000</span>
+                    </div>
+                    <hr class="m-detailprice-hr" />
+                    <div class="inner-content">
+                      <span class="left">Jumlah member dalam 1 grup</span>
+                      <span class="right">2</span>
+                    </div>
+                    <hr class="m-detailprice-hr" />
+                    <div class="inner-content">
+                      <span class="left">Harga Patungan</span>
+                      <span class="right">Rp199.000 ÷ 2 = Rp99.500</span>
+                    </div>
+                    <hr class="m-detailprice-hr" />
+                    <div class="inner-content">
+                      <span class="left">Biaya Admin Seakun</span>
+                      <span class="right">Rp0</span>
+                    </div>
+                    <hr class="m-detailprice-hr" />
+                    <div class="inner-content">
+                      <span class="left-bold">Harga Paket Tahunan</span>
+                      <span class="right-bold">Rp99.500</span>
+                    </div>
+                    <hr class="m-detailprice-hr" />
+                  </div>
+                  <div class="m-package-product-btn">
+                    <a href="#" class="product_modal__btn">Pilih Paket</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="m-container-package">
+                <p class="m-package-status">Preorder</p>
+                <p class="m-package-product-title">Disney Hotstar +</p>
+                <p class="m-package-product-subtitle">Paket User Host</p>
+                <!-- <div style=" margin-left:20px;margin-top: -20px;background-color: red;">
+                          </div> -->
+
+                <div class="m-subpackage-container">
+                  <ul class="ul-check">
+                    <li>
+                      <p>
+                        Akses film mancanegara paling seru dari Marvel, Disney,
+                        dan lainnya
+                      </p>
+                    </li>
+                    <li>
+                      <p>Nonton premier eksklusif film bioskop Indonesia</p>
+                    </li>
+                    <li>
+                      <p>Nikmati tayangan eksklusif dari Disney+ Originals</p>
+                    </li>
+                    <li>
+                      <p>
+                        Stream dengan kualitas HD atau resolusi lebih rendah
+                        untuk hemat data
+                      </p>
+                    </li>
+                    <li>
+                      <p>Sharing ke satu orang lainnya</p>
+                    </li>
+                    <li>
+                      <p>Gratis biaya admin Seakun</p>
+                    </li>
+                  </ul>
+                  <div class="m-detailprice-container">
+                    <div class="">
+                      <p class="m-detailprice-title">
+                        Rp99.500<span>/12 bln</span>
+                      </p>
+                    </div>
+                    <div class="" style="margin-top: 4px">
+                      <p class="m-detailprice-btn-detail">Detail Harga</p>
+                    </div>
+                  </div>
+                  <div class="modal-content-container-package">
+                    <div class="inner-content">
+                      <span class="left-bold">Nama Paket</span>
+                      <span class="right-bold"
+                        >Paket Premium Disney (Tahunan)</span
+                      >
+                    </div>
+                    <hr class="m-detailprice-hr" />
+                    <div class="inner-content">
+                      <span class="left">Harga Paket</span>
+                      <span class="right">Rp199.000</span>
+                    </div>
+                    <hr class="m-detailprice-hr" />
+                    <div class="inner-content">
+                      <span class="left">Jumlah member dalam 1 grup</span>
+                      <span class="right">2</span>
+                    </div>
+                    <hr class="m-detailprice-hr" />
+                    <div class="inner-content">
+                      <span class="left">Harga Patungan</span>
+                      <span class="right">Rp199.000 ÷ 2 = Rp99.500</span>
+                    </div>
+                    <hr class="m-detailprice-hr" />
+                    <div class="inner-content">
+                      <span class="left">Biaya Admin Seakun</span>
+                      <span class="right">Rp0</span>
+                    </div>
+                    <hr class="m-detailprice-hr" />
+                    <div class="inner-content">
+                      <span class="left-bold">Harga Paket Tahunan</span>
+                      <span class="right-bold">Rp99.500</span>
+                    </div>
+                    <hr class="m-detailprice-hr" />
+                  </div>
+                  <div class="m-package-product-btn">
+                    <a href="#" class="product_modal__btn">Pilih Paket</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sub-hero-2">
+        <div class="sub-hero-2-title">
+          <h2>Manfaat Yang Bisa Kamu Dapatkan</h2>
+        </div>
+        <div class="sub-2-hero-img-sm">
+          <img src="./img/pov.png" alt="pov" />
+        </div>
+
+        <div class="sub-2-hero-wrapper">
+          <div class="sub-2-hero-card">
+            <div class="sub-2-hero-point">
+              <img src="./img/percent.svg" alt="percent" />
+              <p class="sub-2-hero-title">Hemat hingga 70%</p>
+            </div>
+            <div class="sub-2-hero-point">
+              <img src="./img/shield.svg" alt="shield" />
+              <p class="sub-2-hero-title">Privasi Terjamin</p>
+            </div>
+            <div class="sub-2-hero-point">
+              <img src="./img/call.svg" alt="call" />
+              <p class="sub-2-hero-title">Customer Service Responsif</p>
+            </div>
+          </div>
+          <div class="sub-2-hero-img-lg">
+            <img src="./img/pov.png" alt="pov" />
+          </div>
+          <div class="sub-2-hero-card">
+            <div class="sub-2-hero-point">
+              <img src="./img/shield_check.svg" alt="s_check" />
+              <p class="sub-2-hero-title">Layanan Legal dan Resmi</p>
+            </div>
+            <div class="sub-2-hero-point">
+              <img src="./img/debit_card.svg" alt="card" />
+              <p class="sub-2-hero-title">Beragam Metode Pembayaran</p>
+            </div>
+            <div class="sub-2-hero-point">
+              <img src="./img/bell.svg" alt="bell" />
+              <p class="sub-2-hero-title">Pengingat Pembayaran</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <section class="product">
+        <div class="container">
+          <div class="product-title">
+            <h2>Produk Digital</h2>
+          </div>
+
+          <div class="product__filter-option">
+            <div class="section-heading">
+              <input
+                class="product__search"
+                type="text"
+                name=""
+                id=""
+                placeholder="Cari Produk"
+              />
+            </div>
+            <div class="section-heading-filter">
+              <button class="product__filter-btn-primary">
+                Filter Kategori
+              </button>
+              <button class="product__filter-btn-secondary">
+                Pilih Ketersediaan
+              </button>
+            </div>
+          </div>
+          <div class="product__list-wrapper">
+            <div class="product__card">
+              <img src="./img/netflix.jpg" alt="netflix" />
+              <div class="product__meta">
+                <span class="product__title">Disney Hotstar</span>
+                <span class="product__duration"
+                  >1,5 <span class="product__month"></span
+                ></span>
+              </div>
+              <p class="product__price">Rp.20.000 <span>/ bln</span></p>
+              <a href="#modal-product-schema" uk-toggle>
+                <div class="product__detailprice">
+                  <svg
+                    class="product__scheme-svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <path
+                        d="M9 4.45962C9.91153 4.16968 10.9104 4 12 4C16.1819 4 19.028 6.49956 20.7251 8.70433C21.575 9.80853 22 10.3606 22 12C22 13.6394 21.575 14.1915 20.7251 15.2957C19.028 17.5004 16.1819 20 12 20C7.81811 20 4.97196 17.5004 3.27489 15.2957C2.42496 14.1915 2 13.6394 2 12C2 10.3606 2.42496 9.80853 3.27489 8.70433C3.75612 8.07914 4.32973 7.43025 5 6.82137"
+                        stroke="#1C274C"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                      ></path>
+                      <path
+                        d="M15 12C15 13.6569 13.6569 15 12 15C10.3431 15 9 13.6569 9 12C9 10.3431 10.3431 9 12 9C13.6569 9 15 10.3431 15 12Z"
+                        stroke="#1C274C"
+                        stroke-width="1.5"
+                      ></path>
+                    </g>
+                  </svg>
+                  <p class="product__scheme">Lihat Skema Harga</p>
+                </div>
+              </a>
+              <a href="#modal-subscribe" uk-toggle class="product__btn"
+                >Berlangganan</a
+              >
+            </div>
+            <div class="product__card">
+              <img src="./img/netflix.jpg" alt="netflix" />
+              <div class="product__meta">
+                <span class="product__title">Disney Hotstar</span>
+                <span class="product__duration"
+                  >1,5 <span class="product__month"></span
+                ></span>
+              </div>
+              <p class="product__price">Rp.20.000 <span>/ bln</span></p>
+              <a href="#modal-product-schema" uk-toggle>
+                <div class="product__detailprice">
+                  <svg
+                    class="product__scheme-svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <path
+                        d="M9 4.45962C9.91153 4.16968 10.9104 4 12 4C16.1819 4 19.028 6.49956 20.7251 8.70433C21.575 9.80853 22 10.3606 22 12C22 13.6394 21.575 14.1915 20.7251 15.2957C19.028 17.5004 16.1819 20 12 20C7.81811 20 4.97196 17.5004 3.27489 15.2957C2.42496 14.1915 2 13.6394 2 12C2 10.3606 2.42496 9.80853 3.27489 8.70433C3.75612 8.07914 4.32973 7.43025 5 6.82137"
+                        stroke="#1C274C"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                      ></path>
+                      <path
+                        d="M15 12C15 13.6569 13.6569 15 12 15C10.3431 15 9 13.6569 9 12C9 10.3431 10.3431 9 12 9C13.6569 9 15 10.3431 15 12Z"
+                        stroke="#1C274C"
+                        stroke-width="1.5"
+                      ></path>
+                    </g>
+                  </svg>
+                  <p class="product__scheme">Lihat Skema Harga</p>
+                </div>
+              </a>
+              <a href="#modal-subscribe" uk-toggle class="product__btn"
+                >Berlangganan</a
+              >
+            </div>
+            <div class="product__card">
+              <img src="./img/netflix.jpg" alt="netflix" />
+              <div class="product__meta">
+                <span class="product__title">Disney Hotstar</span>
+                <span class="product__duration"
+                  >1,5 <span class="product__month"></span
+                ></span>
+              </div>
+              <p class="product__price">Rp.20.000 <span>/ bln</span></p>
+              <a href="#modal-product-schema" uk-toggle>
+                <div class="product__detailprice">
+                  <svg
+                    class="product__scheme-svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <path
+                        d="M9 4.45962C9.91153 4.16968 10.9104 4 12 4C16.1819 4 19.028 6.49956 20.7251 8.70433C21.575 9.80853 22 10.3606 22 12C22 13.6394 21.575 14.1915 20.7251 15.2957C19.028 17.5004 16.1819 20 12 20C7.81811 20 4.97196 17.5004 3.27489 15.2957C2.42496 14.1915 2 13.6394 2 12C2 10.3606 2.42496 9.80853 3.27489 8.70433C3.75612 8.07914 4.32973 7.43025 5 6.82137"
+                        stroke="#1C274C"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                      ></path>
+                      <path
+                        d="M15 12C15 13.6569 13.6569 15 12 15C10.3431 15 9 13.6569 9 12C9 10.3431 10.3431 9 12 9C13.6569 9 15 10.3431 15 12Z"
+                        stroke="#1C274C"
+                        stroke-width="1.5"
+                      ></path>
+                    </g>
+                  </svg>
+                  <p class="product__scheme">Lihat Skema Harga</p>
+                </div>
+              </a>
+              <a href="#modal-subscribe" uk-toggle class="product__btn"
+                >Berlangganan</a
+              >
+            </div>
+            <div class="product__card">
+              <img src="./img/netflix.jpg" alt="netflix" />
+              <div class="product__meta">
+                <span class="product__title">Disney Hotstar</span>
+                <span class="product__duration"
+                  >1,5 <span class="product__month"></span
+                ></span>
+              </div>
+              <p class="product__price">Rp.20.000 <span>/ bln</span></p>
+              <a href="#modal-product-schema" uk-toggle>
+                <div class="product__detailprice">
+                  <svg
+                    class="product__scheme-svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <path
+                        d="M9 4.45962C9.91153 4.16968 10.9104 4 12 4C16.1819 4 19.028 6.49956 20.7251 8.70433C21.575 9.80853 22 10.3606 22 12C22 13.6394 21.575 14.1915 20.7251 15.2957C19.028 17.5004 16.1819 20 12 20C7.81811 20 4.97196 17.5004 3.27489 15.2957C2.42496 14.1915 2 13.6394 2 12C2 10.3606 2.42496 9.80853 3.27489 8.70433C3.75612 8.07914 4.32973 7.43025 5 6.82137"
+                        stroke="#1C274C"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                      ></path>
+                      <path
+                        d="M15 12C15 13.6569 13.6569 15 12 15C10.3431 15 9 13.6569 9 12C9 10.3431 10.3431 9 12 9C13.6569 9 15 10.3431 15 12Z"
+                        stroke="#1C274C"
+                        stroke-width="1.5"
+                      ></path>
+                    </g>
+                  </svg>
+                  <p class="product__scheme">Lihat Skema Harga</p>
+                </div>
+              </a>
+              <a href="#modal-subscribe" uk-toggle class="product__btn"
+                >Berlangganan</a
+              >
+            </div>
+            <div class="product__card">
+              <img src="./img/netflix.jpg" alt="netflix" />
+              <div class="product__meta">
+                <span class="product__title">Disney Hotstar</span>
+                <span class="product__duration"
+                  >1,5 <span class="product__month"></span
+                ></span>
+              </div>
+              <p class="product__price">Rp.20.000 <span>/ bln</span></p>
+              <a href="#modal-product-schema" uk-toggle>
+                <div class="product__detailprice">
+                  <svg
+                    class="product__scheme-svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <path
+                        d="M9 4.45962C9.91153 4.16968 10.9104 4 12 4C16.1819 4 19.028 6.49956 20.7251 8.70433C21.575 9.80853 22 10.3606 22 12C22 13.6394 21.575 14.1915 20.7251 15.2957C19.028 17.5004 16.1819 20 12 20C7.81811 20 4.97196 17.5004 3.27489 15.2957C2.42496 14.1915 2 13.6394 2 12C2 10.3606 2.42496 9.80853 3.27489 8.70433C3.75612 8.07914 4.32973 7.43025 5 6.82137"
+                        stroke="#1C274C"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                      ></path>
+                      <path
+                        d="M15 12C15 13.6569 13.6569 15 12 15C10.3431 15 9 13.6569 9 12C9 10.3431 10.3431 9 12 9C13.6569 9 15 10.3431 15 12Z"
+                        stroke="#1C274C"
+                        stroke-width="1.5"
+                      ></path>
+                    </g>
+                  </svg>
+                  <p class="product__scheme">Lihat Skema Harga</p>
+                </div>
+              </a>
+              <a href="#modal-subscribe" uk-toggle class="product__btn"
+                >Berlangganan</a
+              >
+            </div>
+            <div class="product__card">
+              <img src="./img/netflix.jpg" alt="netflix" />
+              <div class="product__meta">
+                <span class="product__title">Disney Hotstar</span>
+                <span class="product__duration"
+                  >1,5 <span class="product__month"></span
+                ></span>
+              </div>
+              <p class="product__price">Rp.20.000 <span>/ bln</span></p>
+              <a href="#modal-product-schema" uk-toggle>
+                <div class="product__detailprice">
+                  <svg
+                    class="product__scheme-svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <path
+                        d="M9 4.45962C9.91153 4.16968 10.9104 4 12 4C16.1819 4 19.028 6.49956 20.7251 8.70433C21.575 9.80853 22 10.3606 22 12C22 13.6394 21.575 14.1915 20.7251 15.2957C19.028 17.5004 16.1819 20 12 20C7.81811 20 4.97196 17.5004 3.27489 15.2957C2.42496 14.1915 2 13.6394 2 12C2 10.3606 2.42496 9.80853 3.27489 8.70433C3.75612 8.07914 4.32973 7.43025 5 6.82137"
+                        stroke="#1C274C"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                      ></path>
+                      <path
+                        d="M15 12C15 13.6569 13.6569 15 12 15C10.3431 15 9 13.6569 9 12C9 10.3431 10.3431 9 12 9C13.6569 9 15 10.3431 15 12Z"
+                        stroke="#1C274C"
+                        stroke-width="1.5"
+                      ></path>
+                    </g>
+                  </svg>
+                  <p class="product__scheme">Lihat Skema Harga</p>
+                </div>
+              </a>
+              <a href="#modal-subscribe" uk-toggle class="product__btn"
+                >Berlangganan</a
+              >
+            </div>
+            <div class="product__card">
+              <img src="./img/netflix.jpg" alt="netflix" />
+              <div class="product__meta">
+                <span class="product__title">Disney Hotstar</span>
+                <span class="product__duration"
+                  >1,5 <span class="product__month"></span
+                ></span>
+              </div>
+              <p class="product__price">Rp.20.000 <span>/ bln</span></p>
+              <a href="#modal-product-schema" uk-toggle>
+                <div class="product__detailprice">
+                  <svg
+                    class="product__scheme-svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <path
+                        d="M9 4.45962C9.91153 4.16968 10.9104 4 12 4C16.1819 4 19.028 6.49956 20.7251 8.70433C21.575 9.80853 22 10.3606 22 12C22 13.6394 21.575 14.1915 20.7251 15.2957C19.028 17.5004 16.1819 20 12 20C7.81811 20 4.97196 17.5004 3.27489 15.2957C2.42496 14.1915 2 13.6394 2 12C2 10.3606 2.42496 9.80853 3.27489 8.70433C3.75612 8.07914 4.32973 7.43025 5 6.82137"
+                        stroke="#1C274C"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                      ></path>
+                      <path
+                        d="M15 12C15 13.6569 13.6569 15 12 15C10.3431 15 9 13.6569 9 12C9 10.3431 10.3431 9 12 9C13.6569 9 15 10.3431 15 12Z"
+                        stroke="#1C274C"
+                        stroke-width="1.5"
+                      ></path>
+                    </g>
+                  </svg>
+                  <p class="product__scheme">Lihat Skema Harga</p>
+                </div>
+              </a>
+              <a href="#modal-subscribe" uk-toggle class="product__btn"
+                >Berlangganan</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="stepper">
+        <div class="container">
+            <div class="sub-hero-2-title">
+                <h2>Cara Berlangganan</h2>
+            </div>
+          <div class="stepper__list-wrapper">
+            <div class="stepper__card">
+              <img src="./img/hand 1.png" alt="hand_1" />
+              <div class="stepper__meta">
+                <div class="number">
+                  <p>1</p>
+                </div>
+                <p class="title">Pesan Layanan</p>
+              </div>
+            </div>
+            <div class="stepper__card">
+              <img src="./img/hand 2.png" alt="hand_2" />
+              <div class="stepper__meta">
+                <div class="number">
+                  <p>2</p>
+                </div>
+                <p class="title">Pembayaran</p>
+              </div>
+            </div>
+            <div class="stepper__card">
+              <img src="./img/hand 3.png" alt="hand_3" />
+              <div class="stepper__meta">
+                <div class="number">
+                  <p>3</p>
+                </div>
+                <p class="title">Menunggu Proses</p>
+              </div>
+            </div>
+            <div class="stepper__card">
+              <img src="./img/hand 4.png" alt="hand_4" />
+              <div class="stepper__meta">
+                <div class="number">
+                  <p>4</p>
+                </div>
+                <p class="title">Pesanan Diterima</p>
+              </div>
+            </div>
+            <div class="stepper__card">
+              <img src="./img/hand 5.png" alt="hand_5" />
+              <div class="stepper__meta">
+                <div class="number">
+                  <p>5</p>
+                </div>
+                <p class="title">Selesai</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq">
+        <div class="container">
+          <div class="sub-hero-2-title">
+            <h2>Frequently Asked Questions (FAQ)</h2>
+          </div>
+          <div class="faq__list-wrapper">
+            <div class="faq-drawer">
+              <input
+                class="faq-drawer__trigger"
+                id="faq-drawer-1"
+                type="checkbox"
+              />
+              <label class="faq-drawer__title" for="faq-drawer-1"
+                >Kapan masa berlanggan di Akunmu aktif ?</label
+              >
+              <div class="faq-drawer__content-wrapper">
+                <div class="faq-drawer__content">
+                  <p>
+                    Masa berlangganan terhitung ketika Admin Whatsapp memberikan
+                    akun sharing, link invitation atau mengundang kamu ke grup
+                    premium. Masa berlangganan akan tetap berjalan walaupun kamu
+                    tidak meng-accept undangan yang telah dikirimkan.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-drawer">
+              <input
+                class="faq-drawer__trigger"
+                id="faq-drawer-2"
+                type="checkbox"
+              />
+              <label class="faq-drawer__title" for="faq-drawer-2"
+                >Apa perbedaan seakun dengan platform langganan yang
+                lain?</label
+              >
+              <div class="faq-drawer__content-wrapper">
+                <div class="faq-drawer__content">
+                  <p>
+                    Seakun adalah platform yang konsepnya mempertemukan kamu
+                    dengan kawan berlangganan yang mempunyai interest yang sama,
+                    sehingga akun hanya dishare ke member dalam satu grup
+                    tertentu aja. Berbeda dengan seller akun sharing yang
+                    biasanya akan menyebarkan akun ke banyak orang. Skema harga
+                    Seakun sangat transparan karena harga berlangganan adalah
+                    harga yang dibagi rata dengan jumlah member dalam satu grup.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="faq-drawer">
+              <input
+                class="faq-drawer__trigger"
+                id="faq-drawer-3"
+                type="checkbox"
+              />
+              <label class="faq-drawer__title" for="faq-drawer-3"
+                >Payment method apa saja yang available di Seakun?</label
+              >
+              <div class="faq-drawer__content-wrapper">
+                <div class="faq-drawer__content">
+                  <p>Bank transfer Mandiri, BCA, Jenius, Gopay, LinkAja</p>
+                </div>
+              </div>
+            </div>
+            <div class="faq-drawer">
+              <input
+                class="faq-drawer__trigger"
+                id="faq-drawer-4"
+                type="checkbox"
+              />
+              <label class="faq-drawer__title" for="faq-drawer-4"
+                >Bagaimana bila ada kendala ketika proses pembayaran?</label
+              >
+              <div class="faq-drawer__content-wrapper">
+                <div class="faq-drawer__content">
+                  <p>
+                    Bila kamu mengalami kendala dalam melakukan proses
+                    pembayaran, seperti: tidak mendapat konfirmasi dan follow
+                    up. Mohon isi form pada <a href="#">link ini</a>. Kami akan
+                    segera menghubungi kamu maksimal dalam 1x24 jam.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="faq-drawer">
+              <input
+                class="faq-drawer__trigger"
+                id="faq-drawer-5"
+                type="checkbox"
+              />
+              <label class="faq-drawer__title" for="faq-drawer-5"
+                >Bagaimana mekanisme untuk melanjutkan langganan di Seakun?
+              </label>
+              <div class="faq-drawer__content-wrapper">
+                <div class="faq-drawer__content">
+                  <p>
+                    Seminggu dan maksimal sehari sebelum masa berlangganan
+                    habis, kamu akan menerima reminder perpanjangan melalui
+                    email & Whatsapp yang terdaftar. Jika kamu ingin melanjutkan
+                    masa berlangganan, silakan melakukan transfer ke rekening /
+                    e-wallet Seakun dengan nominal yang diinformasikan.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="faq-drawer">
+              <input
+                class="faq-drawer__trigger"
+                id="faq-drawer-6"
+                type="checkbox"
+              />
+              <label class="faq-drawer__title" for="faq-drawer-6"
+                >Apa perbedaan User Host dan User Reguler?</label
+              >
+              <div class="faq-drawer__content-wrapper">
+                <div class="faq-drawer__content">
+                  <p>
+                    User Host adalah user yang diberi wewenang untuk melakukan
+                    pendaftaran dan pembayaran langsung ke provider seperti
+                    Netflix. Pembayaran provider akan sepenuhnya diganti oleh
+                    Seakun ketika pembayaran sudah terdebet. Sedangkan User
+                    Reguler, kamu tinggal terima jadi saja, proses pendaftaran
+                    ke provider dan pencarian kawan berlangganan akan dihandle
+                    oleh Seakun.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="faq-drawer">
+              <input
+                class="faq-drawer__trigger"
+                id="faq-drawer-7"
+                type="checkbox"
+              />
+              <label class="faq-drawer__title" for="faq-drawer-7"
+                >Bagaimana prosedur menjadi User Host?</label
+              >
+              <div class="faq-drawer__content-wrapper">
+                <div class="faq-drawer__content">
+                  <ol>
+                    <li>
+                      Daftar dengan memilih paket User Host. Misal User Host
+                      Netflix
+                    </li>
+                    <li>Admin akan melakukan konfirmasi melalui Whatsapp</li>
+                    <li>
+                      Lakukan pendaftaran menggunakan akun yang ditentukan oleh
+                      Admin
+                    </li>
+                    <li>
+                      Lakukan pembayaran di provider menggunakan kartu
+                      kredit/debit/gopay (khusus Netflix)
+                    </li>
+                    <li>
+                      Setelah berhasil melakukan pembayaran, informasikan ke
+                      Admin
+                    </li>
+                    <li>Admin akan mengirimkan pengganti dana yang terdebet</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+            <div class="faq-drawer">
+              <input
+                class="faq-drawer__trigger"
+                id="faq-drawer-8"
+                type="checkbox"
+              />
+              <label class="faq-drawer__title" for="faq-drawer-8"
+                >Apa yang harus dilakukan bila akun langganan mengalami
+                masalah?</label
+              >
+              <div class="faq-drawer__content-wrapper">
+                <div class="faq-drawer__content">
+                  <p>
+                    Bila akun kamu mengalami masalah, seperti: telah melakukan
+                    pembayaran namun akun berubah menjadi free kembali. Mohon
+                    isi form pada <a href="">link ini</a>. Kami akan segera
+                    menghubungi kamu maksimal 1x24 jam.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="footer">
+        <footer class="footer-section">
+          <div class="container">
+            <div class="footer-content">
+              <!-- <div class="row">
+                <div class="col-xl-4 col-lg-4 mb-50"> -->
+                  <div class="footer-widget">
+                    <div class="footer-logo">
+                      <img src="./img/logo-akunmu.svg" alt="logo" />
+                      <p
+                        style="
+                          font-size: 18px;
+                          font-weight: bold;
+                          margin: 10px;
+                          color: white;
+                        "
+                      >
+                        Akunmu
+                      </p>
+                    </div>
+
+                    <div class="footer-lg">
+                      <div class="footer-text">
+                        <p>
+                          Platform pertama di Indonesia yang memberikan layanan
+                          Berlangganan Bersama agar dapat menikmati fitur
+                          premium dengan proses berlanggaran yang praktis,
+                          legas, aman dan murah
+                        </p>
+                        <br />
+                        <p>akunmu.id@gmail.com</p>
+                        <br />
+                      </div>
+                      <!-- <div class=""></div> -->
+                      <div class="footer-md">
+                        <div class="footer-text">
+                          <h4>Akunmu</h4>
+                          <ul class="footer-ul">
+                            <li><a href="#">Tentang Kami</a></li>
+                            <li><a href="#">Cara Pesan</a></li>
+                            <li><a href="#">Syarat & Ketentuan</a></li>
+                            <li><a href="#">Kebijakan Privasi</a></li>
+                            <li><a href="#">Laporan Kendala</a></li>
+                          </ul>
+                        </div>
+                        <div class="footer-text">
+                          <h4>Produk</h4>
+                          <ul class="footer-ul">
+                            <li><a href="#">Produk Digital</a></li>
+                            <li><a href="#">Produk Non Digital</a></li>
+                            <li><a href="#">Program Patungan</a></li>
+                            <li><a href="#">Program Sekeranjang</a></li>
+                          </ul>
+                        </div>
+                        <div class="footer-text">
+                          <h4>Hubungi Kami</h4>
+                          <ul class="footer-ul">
+                            <li>cs@akunmu</li>
+                            <li>+62 895123123</li>
+                            <li>Jam Operasional</li>
+                            <li>Setiap Hari 09.00 - 21.00 WIB</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <!-- </div>
+              </div> -->
+            </div>
+          </div>
+        </footer>
+      </div>
+    </main>
+
+
+
+    <!-- <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

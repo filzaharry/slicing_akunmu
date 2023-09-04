@@ -1,0 +1,83 @@
+
+
+@media(min-width: 700px) {
+    .order-hero__text-block p {
+        font-size:14px;
+        margin-top:-10px;
+    }
+    .order-hero-card-img{
+        margin:auto;
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        max-height: 200px;
+    }
+    .order-hero-card-img img{
+        max-height: 80px;
+    }
+
+    .order-hero-card-title {
+        margin-top:20px;
+    }
+
+    .order-hero-card-title .title {
+        font-size: 14px;
+    }
+    .order-hero-card-title .subtitle {
+        font-size: 14px;
+    }
+
+    .order-hero-card-price .price {
+        font-size: 14px;
+    }
+}
+
+@media(min-width: 800px) {
+    .order-hero__text-block {
+        width: 60%;
+    }
+}
+
+@media(min-width: 992px) {
+
+    .order-hero {
+        min-height: calc(70vh - 200px);
+        align-items: center;
+    }
+
+    .order-hero__text-block {
+        margin-top: 100px;
+
+    }
+
+    .order-hero__text-block h2 {
+        font-size: 2rem;
+        line-height: 1.3;
+        font-weight: 400;
+    }
+    .order-hero__text-block p {
+        font-size: 14px;
+        color: #3a3a3a;
+    }
+}
+
+@media(min-width: 1200px) {
+    .order-hero__text-block {
+        width: 50%;
+    }
+}
+@media(min-width: 1280px) {
+   
+    .order-hero-card-title .title {
+        font-size: 16px;
+    }
+    .order-hero-card-title .subtitle {
+        font-size: 16px;
+    }
+}
+
+@media(min-width: 1300px) {
+    .order-hero__text-block {
+        width: 40%;
+    }
+}
